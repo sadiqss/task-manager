@@ -6,10 +6,13 @@ const Calender = () => {
     const [value, onChange] = useState(new Date());
 
     return (
-        <div className=''>
-            <Calendar onChange={onChange} value={value} />
-            {value.toString()}
+        <div className='flex justify-center align-items-center'>
+            <div>
+                <Calendar onChange={onChange} value={value} />
+                {value.toString()}
+            </div>
         </div>
+
     );
 };
 
